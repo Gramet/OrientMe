@@ -2,8 +2,8 @@
 rm -rf data/
 mkdir data/
 
-wget https://s3.eu-central-1.wasabisys.com/aicrowd-practice-challenges/public/orientme/v0.1/training.tar.gz -O data/training.tar.gz
-wget https://s3.eu-central-1.wasabisys.com/aicrowd-practice-challenges/public/orientme/v0.1/test.tar.gz -O data/test.tar.gz
-wget https://s3.eu-central-1.wasabisys.com/aicrowd-practice-challenges/public/orientme/v0.1/sample_submission.csv -O data/sample_submission.csv
+curl https://s3.eu-central-1.wasabisys.com/aicrowd-practice-challenges/public/orientme/v0.2/training.tar.gz -o data/training.tar.gz
+curl https://s3.eu-central-1.wasabisys.com/aicrowd-practice-challenges/public/orientme/v0.2/test.tar.gz -o data/test.tar.gz
+curl https://s3.eu-central-1.wasabisys.com/aicrowd-practice-challenges/public/orientme/v0.2/sample_submission.csv -o data/sample_submission.csv
 tar xvzf data/training.tar.gz -C data/
 tar xvzf data/test.tar.gz -C data/
